@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&family=Unbounded:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ededed;
+    color: #000;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+.container{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container img{
+    width: 100%;
+    height: 50vh;
+}
+.logo{
+    width: 240px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+.logo{
+    width: 130px;
+    height: 85px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none ;
+    margin:20px 30px ;
+}
+nav ul li a{
+    
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #2bff00;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition:0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-box{
+    width: 100%;
+}
+.header-box h1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: underline;
+    top: -60px;
+    color: #fff;
+}
+.paragraph{
+    padding: 10px 10%;
+}
+.paragraph p{
+    font-size: 2em;
+    color: #0a0a0a;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*-----------------------------css for small screen----------------------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #headder{
+        background-image: url(image/phone-background.png);
+    }
+    .header-text{
+        margin: top 100%;
+        font-size: 16px;  
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        color: #ababab;
+        padding: 10px 2%;
+    }
+    nav ul{
+        background: #2bff05d9;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}   

@@ -1,0 +1,276 @@
+<!-------------------------------------Webapp Technology------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinakee Digital Technology</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles.css" />
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/18e8bebb2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div id="headder">
+        <video  autoplay loop muted plays-inline class="back-video">
+            <source src="images/video (1).mp4" type="video/mp4" > 
+        </video>
+            <nav>
+                <img src="images/pdt-removebg-preview.png" alt="" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#headder">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#work">Client</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+        <div class="container-h">
+            <div class="row">
+                <div class="header-text">
+                    <p>We Provide the Services</p>
+                    <h1>
+                        Empower Your Business <br />
+                        with Our Innovative <br /><span>Web </span>and
+                        <span>Marketing Strategies</span>
+                    </h1>
+                </div>
+                <div class="header-img">
+                    <img src="images/Headerimg.png" alt="No Source Found" class="img1" width="100%" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------About--------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> <img src="images/My project.png" alt="No Source Found" ></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>
+                        Essel has pioneered a new trend in the Indian software industry by
+                        providing comprehensive, qualitative solutions for our customers.
+                        Our commitment to provide the best, our expertise, and our acumen
+                        ensure our progress every moment, and made us capable of thinking
+                        and delivering more than the obvious.
+                    </p>
+                    <p>Started in 2023 as a firm with a view to reduce the gap between business people and computers by
+                        providing quality software & Marketing services, Webapp Technology has come a long way to achieve landmark in
+                        the field of excellence. With the strong belief that necessity is the mother of all inventions,
+                        Webapp technology associated closely with people of different trades to understand their necessities
+                        and invented application based software to suit their needs.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('vision')">Vision</p>
+                        <p class="tab-links" onclick="opentab('mision')">Mision</p>
+                    </div>
+                    <div class="tab-Contents active-tab" id="vision">
+                        <p>"To emerge as a preeminent Organization providing <br>
+                        world-class IT products, solutions and servicess to a <br> wide range of global clientele"</p>
+                    </div>
+                    <div class="tab-Contents" id="mision">
+                        <p>"Continue to make constant, planned efforts in providing <br>Innovative, cost effective and start-of-the-art quality products, <br>
+                            global clientele, through a team of creative and dedicated <br> professionals "</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------------Services--------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Desgin</h2>
+                    <h4>We deliver you the best Unique creative Design</h4>
+                    <p>
+                        We optimize websites that responsive to all devices. load faster on mobile and desktop. also compatible with all browsers
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Application Desgin</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        explicabo, magnam at laboriosam consequatur perferendis molestias,
+                        laborum velit ipsum veniam iste maiores, ratione harum. Eius,
+                        officiis! Pariatur itaque modi earum.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shop"></i>
+                    <h2>Degital Marketing</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        explicabo, magnam at laboriosam consequatur perferendis molestias,
+                        laborum velit ipsum veniam iste maiores, ratione harum. Eius,
+                        officiis! Pariatur itaque modi earum.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------Work----------------------------->
+    <div id="work">
+        <div class="container">
+            <h1 class="sub-title">Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="" />
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            The app connects you to the tallentedpeople arround the world.
+                            Download it from play store.
+                        </p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="" />
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            The app connects you to the tallentedpeople arround the world.
+                            Download it from play store.
+                        </p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="" />
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            The app connects you to the tallentedpeople arround the world.
+                            Download it from play store.
+                        </p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png" alt="" />
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            The app connects you to the tallentedpeople arround the world.
+                            Download it from play store.
+                        </p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More..</a>
+    </div>
+    <!------------------------contact---------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa-solid fa-envelope"></i>pinakeedigitaltechnology@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9827677937</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Address <br> Raghunath Nagar <br> Bhubaneswar 
+                        
+                    <br>khandagiri <br>Khordha <br>Odisha Pin-751030 </p>
+                     
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form  name="submit-to-google-sheet" method="post">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <input type="tel" name="Phone" placeholder="Your 10 digit Number" required />
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------summery--------------------------------------->
+    <div class="summery">
+        <img src="images/pdt-removebg-preview.png" alt="" width="120px">
+        <div class="summery-head">
+          <div class="summery-list">
+            <h2>About us</h2>
+            <p><a href="about1.html">Who we are</a></p>
+            <p><a href="partners.html">Partner</a></p>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+          </div>
+          <div class="summery-list">
+            <h2>Media Centre</h2>
+            <p><a href="">News Office</a></p>
+            <p><a href="">News Room</a></p>
+          </div>
+          <div class="summery-list">
+            <h2>Careers</h2>
+            <p><a href="">Job Vacency</a></p>
+            <p><a href="">Internship</a></p>
+          </div>
+          <div class="summery-list">
+            <h2>Contact Us</h2>
+            <p><a href="gmail.com">contactpinakeedigitaltech@gmail.com</a></p>
+            <!---<p><a href="gmail.com">hr.wentech@gmail.com</a></p>-->
+            <p><a href="">+91 9827677937</a></p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright <i class="fa-regular fa-copyright"></i>Pinakee Digital Technology made with by Pinakee digital technology</p>
+        </div>
+      </div>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzf_shsXq8B0wFXPlbk4b90Jq1HgntVIdgQy_OP45TLWzheMRsIAIYls_vMtVMBuRcfMg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        let loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+</html>
